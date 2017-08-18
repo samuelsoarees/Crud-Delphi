@@ -1,6 +1,6 @@
 object Form1: TForm1
-  Left = 585
-  Top = 274
+  Left = 488
+  Top = 219
   BorderStyle = bsSingle
   Caption = 'Tela de Cadastro'
   ClientHeight = 288
@@ -79,6 +79,7 @@ object Form1: TForm1
     Top = 81
     Width = 262
     Height = 23
+    NumbersOnly = True
     TabOrder = 1
   end
   object Edit3: TEdit
