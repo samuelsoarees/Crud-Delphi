@@ -94,6 +94,7 @@ object Form1: TForm1
     Top = 180
     Width = 262
     Height = 21
+    PasswordChar = '*'
     TabOrder = 3
   end
   object Button1: TButton
