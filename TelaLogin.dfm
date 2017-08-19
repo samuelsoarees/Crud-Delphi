@@ -57,13 +57,14 @@ object Form2: TForm2
     Left = 16
     Top = 105
     Width = 353
-    Height = 32
+    Height = 27
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -16
     Font.Name = 'Tahoma'
     Font.Style = []
     ParentFont = False
+    PasswordChar = '*'
     TabOrder = 1
   end
   object Button1: TButton
