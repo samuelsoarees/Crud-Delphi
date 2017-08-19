@@ -97,15 +97,15 @@
         <DelphiCompile Include="$(MainSource)">
             <MainSource>MainSource</MainSource>
         </DelphiCompile>
-        <DCCReference Include="TelaCadastro.pas">
-            <Form>Form1</Form>
-            <FormType>dfm</FormType>
-        </DCCReference>
-        <DCCReference Include="TelaLogin.pas">
+        <DCCReference Include="View\TelaLogin.pas">
             <Form>Form2</Form>
             <FormType>dfm</FormType>
         </DCCReference>
-        <DCCReference Include="DataModule.pas">
+        <DCCReference Include="View\TelaCadastro.pas">
+            <Form>Form1</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="Model\DataModule.pas">
             <Form>DataModule1</Form>
             <FormType>dfm</FormType>
             <DesignClass>TDataModule</DesignClass>

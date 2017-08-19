@@ -2,9 +2,9 @@ program Project1;
 
 uses
   Vcl.Forms,
-  TelaCadastro in 'TelaCadastro.pas' {Form1},
-  TelaLogin in 'TelaLogin.pas' {Form2},
-  DataModule in 'DataModule.pas' {DataModule1: TDataModule};
+  TelaLogin in 'View\TelaLogin.pas' {Form2},
+  TelaCadastro in 'View\TelaCadastro.pas' {Form1},
+  DataModule in 'Model\DataModule.pas' {DataModule1: TDataModule};
 
 {$R *.res}
 
