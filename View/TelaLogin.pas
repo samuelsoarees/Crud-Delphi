@@ -15,6 +15,7 @@ type
     Button1: TButton;
     Button2: TButton;
     procedure Button2Click(Sender: TObject);
+
   private
     { Private declarations }
   public
@@ -43,5 +44,4 @@ begin
 
   end;
 end;
-
 end.
