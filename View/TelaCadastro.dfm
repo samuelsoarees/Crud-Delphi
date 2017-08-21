@@ -3,8 +3,8 @@ object Form1: TForm1
   Top = 219
   BorderStyle = bsSingle
   Caption = 'Tela de Cadastro'
-  ClientHeight = 288
-  ClientWidth = 491
+  ClientHeight = 282
+  ClientWidth = 461
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -17,7 +17,7 @@ object Form1: TForm1
   TextHeight = 13
   object Label1: TLabel
     Left = 184
-    Top = 55
+    Top = 57
     Width = 74
     Height = 16
     Caption = 'Digite o CPF:'
@@ -67,14 +67,14 @@ object Form1: TForm1
     Font.Style = []
     ParentFont = False
   end
-  object Edit1: TEdit
+  object nomeText: TEdit
     Left = 99
     Top = 30
     Width = 262
     Height = 21
     TabOrder = 0
   end
-  object Edit2: TEdit
+  object CpfText: TEdit
     Left = 99
     Top = 83
     Width = 262
@@ -82,14 +82,14 @@ object Form1: TForm1
     NumbersOnly = True
     TabOrder = 1
   end
-  object Edit3: TEdit
+  object EmailText: TEdit
     Left = 99
     Top = 132
     Width = 262
     Height = 21
     TabOrder = 2
   end
-  object Edit4: TEdit
+  object senhaText: TEdit
     Left = 99
     Top = 180
     Width = 262
@@ -97,71 +97,22 @@ object Form1: TForm1
     PasswordChar = '*'
     TabOrder = 3
   end
-  object Button1: TButton
+  object CadastrarButton: TButton
     Left = 272
     Top = 232
     Width = 75
     Height = 25
     Caption = 'Cadastrar'
     TabOrder = 4
+    OnClick = CadastrarButtonClick
   end
-  object Button2: TButton
+  object VoltarButton: TButton
     Left = 136
     Top = 232
     Width = 75
     Height = 25
     Caption = 'Voltar'
     TabOrder = 5
-    OnClick = Button2Click
-  end
-  object FDPhysFBDriverLink1: TFDPhysFBDriverLink
-    VendorLib = 
-      'C:\Users\samue\Documents\Embarcadero\Studio\Projects\ProjetoBD\f' +
-      'bclient.dll'
-    Left = 412
-    Top = 136
-  end
-  object SQLConnection1: TSQLConnection
-    DriverName = 'Firebird'
-    Params.Strings = (
-      'DriverUnit=Data.DBXFirebird'
-      
-        'DriverPackageLoader=TDBXDynalinkDriverLoader,DbxCommonDriver240.' +
-        'bpl'
-      
-        'DriverAssemblyLoader=Borland.Data.TDBXDynalinkDriverLoader,Borla' +
-        'nd.Data.DbxCommonDriver,Version=24.0.0.0,Culture=neutral,PublicK' +
-        'eyToken=91d62ebb5b0d1b1b'
-      
-        'MetaDataPackageLoader=TDBXFirebirdMetaDataCommandFactory,DbxFire' +
-        'birdDriver240.bpl'
-      
-        'MetaDataAssemblyLoader=Borland.Data.TDBXFirebirdMetaDataCommandF' +
-        'actory,Borland.Data.DbxFirebirdDriver,Version=24.0.0.0,Culture=n' +
-        'eutral,PublicKeyToken=91d62ebb5b0d1b1b'
-      'GetDriverFunc=getSQLDriverINTERBASE'
-      'LibraryName=dbxfb.dll'
-      'LibraryNameOsx=libsqlfb.dylib'
-      'VendorLib=fbclient.dll'
-      'VendorLibWin64=fbclient.dll'
-      'VendorLibOsx=/Library/Frameworks/Firebird.framework/Firebird'
-      'Database=database.fdb'
-      'User_Name=sysdba'
-      'Password=masterkey'
-      'Role=RoleName'
-      'MaxBlobSize=-1'
-      'LocaleCode=0000'
-      'IsolationLevel=ReadCommitted'
-      'SQLDialect=3'
-      'CommitRetain=False'
-      'WaitOnLocks=True'
-      'TrimChar=False'
-      'BlobSize=-1'
-      'ErrorResourceFile='
-      'RoleName=RoleName'
-      'ServerCharSet='
-      'Trim Char=False')
-    Left = 416
-    Top = 200
+    OnClick = VoltarButtonClick
   end
 end

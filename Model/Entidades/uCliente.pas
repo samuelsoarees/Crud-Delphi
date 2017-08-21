@@ -11,8 +11,8 @@ TCliente = class
     Fsenha: string;
   
   public
-    property nome :  string read Fnome  write Fnome;
-    property cpf :   string read Fcpf   write Fcpf;
+    property nome  : string read Fnome  write Fnome;
+    property cpf   : string read Fcpf   write Fcpf;
     property email : string read Femail write Femail;
     property senha : string read Fsenha write Fsenha;
     constructor create(nome:string; cpf:string; email:string; senha:string);
@@ -27,10 +27,10 @@ implementation
 
 constructor TCliente.create(nome:string; cpf:string; email:string; senha:string);
 begin
-  self.Fnome:= nome;
-  self.Fcpf := cpf;
-  self.Femail:=email;
-  self.Fsenha:=senha;
+  self.Fnome  := nome;
+  self.Fcpf   := cpf;
+  self.Femail := email;
+  self.Fsenha := senha;
 end;
 
 constructor TCliente.createEmpty;
